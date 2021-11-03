@@ -1,0 +1,78 @@
+body {
+    font-weight: bold;
+    padding: 0;
+    font-size: 4em;
+    text-align: center;
+    color: #666;
+}
+/* スタートボタン */
+#start {
+    text-align: center;
+}
+#start_button {
+    font-size: 30px;
+    padding:1em 2em;
+}
+/* 結果 */
+h4{
+    font-size: 0.4em;
+}
+/* 文字がカクカクならないようにtransition */
+span {
+    transition: all 250ms 0s ease-in-out;
+}
+.wrap {
+    background-color: rgba(102,102,102,0.7);
+    padding: 30px;
+    color: #fff;
+}
+.after-input {
+    color:crimson;
+    font-size: 0.7em;
+}
+.scores {
+    font-size: 0.3em;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+#result {
+    font-size: 0.4em;
+}
+
+
+/*ajaxモーダル*/
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+}
+
+.modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+}
+
+.fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+}
+#comment_area {
+    width: 100%;
+}
