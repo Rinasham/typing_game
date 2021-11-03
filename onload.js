@@ -2,6 +2,7 @@ let result = $('#result');
 const time = TIME;
 function finish() {
     state = false;
+    $('#game_area').css('display','none');
     result.text('正解:' + correct + '  不正解:' + incorrect);
     //ミスも含めたトータル入力キー数
     let total = correct + incorrect;

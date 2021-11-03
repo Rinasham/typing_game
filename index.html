@@ -4,34 +4,32 @@
   <meta charset="utf-8">
   <title>Typing Game</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
 </head>
 <body>
-    <div class="container">
-        <!-- モーダル -->
-        <div class="start" id="start">
-            <h1>Typing Game</h1>
-            <button id="start_button">Start</button>
+    <h3 id="timer">10秒</h3>
+    <div class="start" id="start">
+        <h1>Typing Game</h1>
+        <input type="button" id="start_button" value="Start"></input>
+    </div>
+        <div class="result_area">
+            <h4 id="result"></h4>
+            <h4 id="rate"></h4>
+            <h4 id="kpm"></h4>
+            <h4 id="total_score"></h4>
         </div>
-        <!-- <input type="button" id="start_button" value="start" onclick="createQuestion()" style="text-align: center"> -->
-        <h4 id="result"></h4>
-        <h4 id="rate"></h4>
-        <h4 id="kpm"></h4>
-        <h4 id="total_score"></h4>
-        <h3 id="timer"></h3>
-        <div class="game_area" style="display: none;">
+        <div id="game_area" style="display: none;">
             <div class="wrap">
                 <p id="text"></p>
             </div>
             <div class="scores">
                 <div id="correct_count" value="0"></div>
                 <div id="incorrect_count" value="0"></div>
-                <form>
-                    <!-- {% csrf_token %} -->
+                <!-- <form>
                     <input id="count" type="hidden" name="count" value="0"></input>
-                </form>
+                </form> -->
             </div>
         </div>
-    </div>
     <!-- モーダル -->
     <div class="modal-wrapper" id="modal">
         <div class="modal">
@@ -44,6 +42,5 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="typing.js"></script>
     <script src="onload.js"></script>
-    
 </body>
 </html>

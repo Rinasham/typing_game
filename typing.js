@@ -7,7 +7,7 @@ let correctText = $('#correct_count');
 let incorrectText = $('#incorrect_count');
 
 // タイマー関連
-let TIME = 10;
+let TIME = 20;
 function startTimer(){
     const timer = document.getElementById('timer');
     const countdown = setInterval(function() {
@@ -23,7 +23,7 @@ function startTimer(){
 
 //スタート
 $('#start_button').click(function(){
-    $('.game_area').css('display','block');
+    $('#game_area').css('display','block');
     $('.start').css('display','none');
     startTimer();
     createQuestion();
